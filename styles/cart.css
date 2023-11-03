@@ -1,0 +1,62 @@
+.cart_page__name{
+   text-align: center;
+   font-size: 33px;
+
+}
+.cart_page__right_side,.cart_page__left_side{
+    display: inline-flex;
+    flex-direction: column;
+    width: calc(50% - 0.5em);
+    vertical-align: top;
+}
+
+.cart_page__right_side{
+    box-sizing: border-box;
+    padding-left: 150px;
+}
+
+.coupon_form{
+    margin-top: 64px;
+    white-space: nowrap;
+    display: flex;
+    gap: 76px;
+}
+
+.coupon_form__input{
+    width: 100%;
+    font-size: 16px;
+}
+.coupon_form__button{
+    width: 168px;
+    height: 53px;
+    margin-left: 76px;
+}
+.right_side__row{
+    display: flex ;
+    justify-content:space-between;
+    margin: 23px 0 0 0;
+}
+.right_side__row_text{
+    color: var(--light_dark-gray);
+}
+.right_side__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--light_light-gray);
+    padding-bottom: 39px;
+    margin-bottom: 42px;
+}
+.cart_page__right_side_select{
+    outline: none;
+    margin-bottom: 23px;
+    padding-bottom: 13px;
+    border: none;
+    background: none;
+    
+}
+.cart_page__right_side_button{
+    margin-top: 45px;
+
+}

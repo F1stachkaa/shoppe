@@ -1,0 +1,94 @@
+.search_form {
+  border-bottom: 1px solid black;
+  margin-bottom: 39px;
+  display: flex;
+  margin-bottom: 0px;
+}
+.search_input {
+  outline: none;
+  border: none;
+  padding-bottom: 11px;
+}
+.search_button {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.blog__search_form {
+  display: flex;
+  flex-direction: column;
+  width: 262px;
+}
+.search_input {
+  width: 100%;
+}
+.blog__search_form_label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 62px;
+  margin-bottom: 22px;
+  
+}
+
+.blog__search_form_checkbox {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: absolute;
+}
+
+.blog__search_form_checkbox_text {
+  cursor: pointer;
+  color: #707070;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.blog__search_form_checkbox:checked + .blog__search_form_checkbox_text {
+  color: black;
+}
+.blog__card_photo{  
+  width: 450px;
+  height: 300px;
+}
+.blog__card_details{
+  font-size: 14px;
+  color: #707070;
+  margin-top: 22px;
+  margin-bottom: 5px;
+}
+.blog__card_name{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.blog__card_text{
+    color: #707070;
+    margin-bottom: 24px;
+}
+.blog__card_link{
+    color: #a18a68;
+    font-weight: 700;
+}
+.blog__card{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 488px;
+}
+.blog__page{
+    display: flex;
+    flex-direction: row;
+}
+.blog__aside{
+    margin-right: 48px;
+}
+.blog__main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 38px;
+}

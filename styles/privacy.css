@@ -1,0 +1,41 @@
+.page {
+  margin: 0 auto;
+  width: 671px;
+}
+
+.page__name {
+  font-weight: 500;
+  font-size: 33px;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.page__text {
+  font-size: 16px;
+  line-height: 2;
+  margin: 0;
+}
+.page__heading {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 24px;
+  margin-top: 39px;
+}
+
+.page__list {
+  font-size: 16px;
+  padding: 0 14px;
+  margin: 0;
+  list-style: none;
+}
+
+.page__list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  background-color: black;
+  border-radius: 50px;
+  display: inline-block;
+}

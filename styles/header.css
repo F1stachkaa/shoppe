@@ -1,0 +1,103 @@
+.shop_name {
+  font-family: "Allerta Stencil", sans-serif;
+}
+.shop_name::first-letter {
+  color: #a18a68;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__divider {
+  width: 1px;
+  height: 20px;
+  background-color: #707070;
+  margin-right: 48px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation__item {
+  margin: 0 32px;
+}
+
+.navigation__link {
+  color: black;
+}
+.header__icon {
+  margin: 0 19.5px;
+}
+
+.header__cart_link {
+    position: relative;
+ }
+
+.header__cart_counter {
+  position: absolute;
+  right: 16px;
+  top: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11px;
+  height: 11px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 7px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .shop_name {
+    font-size: 25px;
+    margin: 16px 0;
+  }
+  .header__divider,
+  .header__link:nth-child(3),
+  .header__link:nth-child(5) {
+    display: none;
+  }
+  .header__mobile_button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 20px;
+    height: 40px;
+  }
+  .header__mobile_button_line {
+    width: 20px;
+    height: 2px;
+    margin: 2px 0;
+    background-color: black;
+    border-radius: 5px;
+  }
+  .header__mobile_button_line:last-child {
+    width: 14px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header__mobile_button {
+    display: none;
+  }
+}
