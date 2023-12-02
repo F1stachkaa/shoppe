@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/product_card.css" />
     <link rel="stylesheet" href="styles/products.css" />
@@ -144,15 +144,8 @@
               class=""
             />
           </div>
-          <div>
-            <img
-              class="big_image"
-              src="photos/product1.jpg"
-              alt=""
-              width="540"
-              height="600"
-              class=""
-            />
+          <div class="big_image__wrapper">
+            <img class="big_image" src="photos/product1.jpg" alt="" class="" />
             <div class="line_background">
               <div class="line"></div>
             </div>
@@ -160,58 +153,62 @@
         </div>
         <div class="right_block">
           <h2 class="product__name">Lira Earrings</h2>
-          <h3 class="product__price">$20,00</h3>
-          <img
-            src="icons/Vector.png"
-            alt=""
-            width="18"
-            height="17.25"
-            class=""
-          />
-          <img
-            src="icons/Vector.png"
-            alt=""
-            width="18"
-            height="17.25"
-            class=""
-          />
-          <img
-            src="icons/Vector.png"
-            alt=""
-            width="18"
-            height="17.25"
-            class=""
-          />
-          <img
-            src="icons/Vector.png"
-            alt=""
-            width="18"
-            height="17.25"
-            class=""
-          />
-          <img
-            src="icons/Vector.png"
-            alt=""
-            width="18"
-            height="17.25"
-            class=""
-          />
+          <h3 class="product_page__price">$20,00</h3>
+          <span class="product_rating">
+            <img
+              src="icons/Vector.png"
+              alt=""
+              width="18"
+              height="17.25"
+              class=""
+            />
+            <img
+              src="icons/Vector.png"
+              alt=""
+              width="18"
+              height="17.25"
+              class=""
+            />
+            <img
+              src="icons/Vector.png"
+              alt=""
+              width="18"
+              height="17.25"
+              class=""
+            />
+            <img
+              src="icons/Vector.png"
+              alt=""
+              width="18"
+              height="17.25"
+              class=""
+            />
+            <img
+              src="icons/Vector.png"
+              alt=""
+              width="18"
+              height="17.25"
+              class=""
+            />
+          </span>
           <a class="product__rewiew"> 1 customer rewiew</a>
-          <p class="product__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            sapiente hic magni quo esse illo error, a eligendi harum minus
-            doloribus? Reprehenderit dolore voluptatem nostrum odit consectetur
-            aspernatur explicabo ipsum!
-          </p>
-          <div class="small_block">
-            <div class="product_quantity_selector">
-              <button class="button">-</button>
-              <span>1</span>
-              <button class="button">+</button>
+          <div class="product__block">
+              <p class="product__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto sapiente hic magni quo esse illo error, a eligendi
+                harum minus doloribus? Reprehenderit dolore voluptatem nostrum
+                odit consectetur aspernatur explicabo ipsum!
+              </p>
+              <div class="small_block">
+                <div class="product_quantity_selector">
+                  <button class="button">-</button>
+                  <span>1</span>
+                  <button class="button">+</button>
+                </div>
+                <button class="product__button">ADD TO CART</button>
+              </div>
             </div>
-            <button class="product__button">ADD TO CART</button>
-          </div>
-          <div>
+
             <button class="wishlist_button">
               <img src="icons/Icon color.png" alt="" />
             </button>
@@ -249,12 +246,11 @@
           <p>
             <b>Categories: </b><span class="product__smh">Fashion,Style</span>
           </p>
-        </div>
         <section class="product_page__tabs">
           <div class="tab_buttons">
             <button class="tab_button tab_button--active">Description</button>
             <button class="tab_button">Additional information</button>
-            <button class="tab_button">Rewiews 0</button>
+            <button class="tab_button">Rewiews(0)</button>
           </div>
           <span class="tab_line"></span>
 
@@ -264,8 +260,8 @@
         </section>
         <h2 class="section_text">Similar Items</h2>
         <section class="page__products">
-          <a href="/product.html">
-            <article class="product">
+          <a href="/product.html" class="product">
+            <article >
               <img
                 class="product__photo"
                 src="photos/product1.jpg"
@@ -277,29 +273,32 @@
               </div>
             </article>
           </a>
-
-          <article class="product">
-            <img
-              class="product__photo"
-              src="photos/product1.jpg"
-              alt="Product 1 photo"
-            />
-            <div class="product__body">
-              <h2 class="product__name">Gold Earrings</h2>
-              <p class="product__price">$1000</p>
-            </div>
-          </article>
-          <article class="product">
-            <img
-              class="product__photo"
-              src="photos/product1.jpg"
-              alt="Product 1 photo"
-            />
-            <div class="product__body">
-              <h2 class="product__name">Gold Earrings</h2>
-              <p class="product__price">$1000</p>
-            </div>
-          </article>
+          <a href="/product.html" class="product">
+            <article >
+              <img
+                class="product__photo"
+                src="photos/product1.jpg"
+                alt="Product 1 photo"
+              />
+<div class="product__body">
+                <h2 class="product__name">Gold Earrings</h2>
+                <p class="product__price">$1000</p>
+              </div>
+            </article>
+          </a>
+          <a href="/product.html" class="product">
+            <article>
+              <img
+                class="product__photo"
+                src="photos/product1.jpg"
+                alt="Product 1 photo"
+              />
+              <div class="product__body">
+                <h2 class="product__name">Gold Earrings</h2>
+                <p class="product__price">$1000</p>
+              </div>
+            </article>
+          </a>
         </section>
       </main>
       <footer class="footer">

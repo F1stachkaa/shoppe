@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles/mobile_menu.css" />
+    <script src="js/filter_section.js" defer></script>
     <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
@@ -222,20 +223,18 @@
         <section class="page__heading">
           <h2>Shop The Latest</h2>
         </section>
-        <div>
-          <button class="open_mobile_filters">
+        <div class="filters_button--hidden">
+          <button class="open_mobile_filters" id="openMobileFilters">
             <img src="icons/filter (1) 2.svg">  
               Filters
           </button>
         </div>
-        <div class="page__content">
-          <form class="filters_form">
-            <div class="search_form">
-              <input class="search_input" type="text" name="search" placeholder="Search..." />
-              <button class="search_button">
-                <img src="icons/Icon color (9).png" alt="" />
-              </button>
-            </div>
+        <div class="mobile_filters">
+          <button class="mobile_filters__close_button">
+            <img  src="icons/Vector (1).png" >
+          </button>
+          <h3 class="mobile_filters__heading">Filters</h3>
+          <form class="mobile_filters__form">
             <select class="filters_select">
               <option value="">Shop By</option>
             </select>
@@ -261,6 +260,40 @@
               </div>
             </label>
           </form>
+        </div>
+        <div class="page__content">
+            <form class="filters_form">
+              <div class="search_form">
+                <input class="search_input" type="text" name="search" placeholder="Search..." />
+                <button class="search_button">
+                  <img src="icons/Icon color (9).png" alt="" />
+                </button>
+              </div>
+              <select class="filters_select">
+                <option value="">Shop By</option>
+              </select>
+              <select class="filters_select">
+                <option value="">Sort By</option>
+              </select>
+              <div class="filters_range_group">
+                <input type="range"class="filters_range"/>
+                <input type="range" class="filters_range"/>
+              </div>
+              <label class="form_label">
+                On sale <input type="checkbox" name="" id="" />
+                <div class="checkbox">
+                  <span class="background"></span>
+                  <span class="dot"></span>
+                </div>
+              </label>
+              <label class="form_label">
+                In stock <input type="checkbox" name="" id="" />
+                <div class="checkbox">
+                  <span class="background"></span>
+                  <span class="dot"></span>
+                </div>
+              </label>
+            </form>
           <div class="products">
             <article class="product--small">
               <img
@@ -325,6 +358,7 @@
                 <p class="product__price">$1000</p>
               </div>
             </article>
+           
         </div>
       </main>
       <footer class="footer">

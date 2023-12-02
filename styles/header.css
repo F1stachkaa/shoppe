@@ -41,8 +41,8 @@ header {
 }
 
 .header__cart_link {
-    position: relative;
- }
+  position: relative;
+}
 
 .header__cart_counter {
   position: absolute;

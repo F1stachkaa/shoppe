@@ -158,6 +158,7 @@
     display: none;
   }
 }
+
 .filter_section__form {
   width: 100%;
   position: relative;
@@ -178,4 +179,38 @@
   position: absolute;
   top: 10px;
   left: 10px;
+}
+.mobile_filters{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  display: none;
+}
+.mobile_filters--visible{
+  display: block;
+}
+.mobile_filters__heading{
+  margin: 0;
+  font-weight: 500;
+}
+.mobile_filters__close_button{
+   position: absolute;
+   top: 3px;
+   right: 3px;  
+   height: 40px;
+   width: 40px;
+   background-color: transparent;
+   border: none;
+   padding: 0;
+   margin: 0;
+}
+.mobile_filters__form{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
